@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+  <div class="cards-container">.
+</head>
+<body><body>
+    <h1>Mitos e Verdades sobre a Arte da Música</h1>
+
+    <p>
+        A música faz parte da vida das pessoas 
+        em diferentes culturas e épocas. 
+        Neste site, vamos explorar alguns mitos e
+         verdades sobre a arte da música 
+        e compreender melhor sua importância 
+        para a sociedade.
+    </p>
+
+    <!-- Cada div com a classe "card" representa um cartão de conteúdo.
+         A classe poderá ser usada futuramente para estilização com CSS. -->
+    <div class="card">
+    <div class="cards-container"></div>
+        <h2>Mito 1: A arte da música</h2>
+
+        <p>
+            Muitas pessoas acreditam que a música é apenas entretenimento, mas ela
+            também é uma importante forma de expressão cultural, artística e emocional.
+        </p>
+
+        <img src="https://picsum.photos/300/200" alt="Pessoa tocando instrumento musical">
+
+        <!-- A classe "btn-modal" poderá ser usada futuramente pelo JavaScript
+             para abrir o modal com informações detalhadas sobre o conteúdo. -->
+        <button class="btn-modal">Saiba mais</button>
+
+        <!-- A classe "btn-like" poderá ser usada pelo JavaScript para controlar
+             a curtida. O atributo data-likes armazena a quantidade inicial.
+             A classe "like-count" identifica o contador que será atualizado. -->
+        <button class="btn-like" data-likes="0">
+            ❤️ Curtir (<span class="like-count">0</span>)
+        </button>
+    </div>
+
+    <!-- Segundo cartão de conteúdo -->
+    <div class="card">
+        <h2>Mito 2: A música nos ajuda a <mark data-lexical-text="true">melhorar a saúde mental e física, reduzir o estresse, estimular o cérebro e promover o bem-estar geral</mark></h2>
+
+        <p>
+            Estudos mostram que a música pode contribuir para o relaxamento,
+            estimular a memória, favorecer a concentração e melhorar o bem-estar.
+        </p>
+
+        <img src="https://picsum.photos/301/200" alt="Pessoa ouvindo música e relaxando">
+
+        <!-- A classe "btn-modal" poderá ser usada futuramente pelo JavaScript
+             para abrir o modal correspondente a este cartão. -->
+        <button class="btn-modal">Saiba mais</button>
+
+        <!-- O atributo data-likes guarda a quantidade de curtidas.
+             A classe "like-count" será usada para atualizar o contador com JavaScript. -->
+        <button class="btn-like" data-likes="0">
+            ❤️ Curtir (<span class="like-count">0</span>)
+        </button>
+    </div>
+
+    <!-- Modal oculto inicialmente.
+         O ID "modal" permitirá que o JavaScript encontre e controle a janela.
+         A classe "modal" poderá ser usada para estilização.
+         A classe "hidden" poderá ser usada futuramente para ocultar ou exibir o modal. -->
+    <div id="modal" class="modal hidden">
+
+        <!-- A classe "modal-content" identifica a área interna da janela flutuante. -->
+        <div class="modal-content">
+
+            <!-- A classe "close-btn" será usada futuramente pelo JavaScript
+                 para fechar o modal quando o usuário clicar no "X". -->
+            <span class="close-btn">&times;</span>
+
+            <!-- O ID "modal-title" permitirá que o JavaScript altere
+                 dinamicamente o título do modal. -->
+            <h3 id="modal-title"></h3>
+
+            <!-- O ID "modal-text" permitirá que o JavaScript altere
+                 dinamicamente o texto detalhado do modal. -->
+            <p id="modal-text"></p>
+
+        </div>
+    </div>
+</body>
+    
+</html>
