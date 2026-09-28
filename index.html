@@ -2,93 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mitos e Verdades sobre a Música</title>
+
+    <!-- Ligação com o CSS -->
     <link rel="stylesheet" href="estilo.css">
-  <div class="cards-container">.
 </head>
-<body><body>
-    <h1>Mitos e Verdades sobre a Arte da Música</h1>
+<body>
 
-    <p>
-        A música faz parte da vida das pessoas 
-        em diferentes culturas e épocas. 
-        Neste site, vamos explorar alguns mitos e
-         verdades sobre a arte da música 
-        e compreender melhor sua importância 
-        para a sociedade.
-    </p>
+    <header>
+        <h1>Mitos e Verdades sobre a Arte da Música</h1>
+        <p>Descubra informações interessantes sobre o universo musical.</p>
+    </header>
 
-    <!-- Cada div com a classe "card" representa um cartão de conteúdo.
-         A classe poderá ser usada futuramente para estilização com CSS. -->
-    <div class="card">
-    <div class="cards-container"></div>
-        <h2>Mito 1: A arte da música</h2>
+    <main class="container">
 
-        <p>
-            Muitas pessoas acreditam que a música é apenas entretenimento, mas ela
-            também é uma importante forma de expressão cultural, artística e emocional.
-        </p>
+        <!-- Card 1 -->
+        <section class="card">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600"
+                alt="Pessoa tocando violão">
 
-        <img src="https://picsum.photos/300/200" alt="Pessoa tocando instrumento musical">
+            <h2>Mito: É preciso nascer com talento para aprenderssoas acreditam que somente quem nasce talentoso
+                consegue aprender um instrumento musical.
+            </p>
 
-        <!-- A classe "btn-modal" poderá ser usada futuramente pelo JavaScript
-             para abrir o modal com informações detalhadas sobre o conteúdo. -->
-        <button class="btn-modal">Saiba mais</button>
+            <button id="btnMito">Saiba mais</button>
+        </section>
 
-        <!-- A classe "btn-like" poderá ser usada pelo JavaScript para controlar
-             a curtida. O atributo data-likes armazena a quantidade inicial.
-             A classe "like-count" identifica o contador que será atualizado. -->
-        <button class="btn-like" data-likes="0">
-            ❤️ Curtir (<span class="like-count">0</span>)
-        </button>
-    </div>
+        <!-- Card 2 -->
+        <section class="card">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600"
+                alt="Piano">
 
-    <!-- Segundo cartão de conteúdo -->
-    <div class="card">
-        <h2>Mito 2: A música nos ajuda a <mark data-lexical-text="true">melhorar a saúde mental e física, reduzir o estresse, estimular o cérebro e promover o bem-estar geral</mark></h2>
+            <h2>Verdade: A prática 
 
-        <p>
-            Estudos mostram que a música pode contribuir para o relaxamento,
-            estimular a memória, favorecer a concentração e melhorar o bem-estar.
-        </p>
+            <p>
+                O desenvolvimento musical depende muito do estudo e da prática.
+            </p>
 
-        <img src="https://picsum.photos/301/200" alt="Pessoa ouvindo música e relaxando">
+            <button id="btnVerdade">Saiba mais</button>
+        </section>
 
-        <!-- A classe "btn-modal" poderá ser usada futuramente pelo JavaScript
-             para abrir o modal correspondente a este cartão. -->
-        <button class="btn-modal">Saiba mais</button>
+    </main>
 
-        <!-- O atributo data-likes guarda a quantidade de curtidas.
-             A classe "like-count" será usada para atualizar o contador com JavaScript. -->
-        <button class="btn-like" data-likes="0">
-            ❤️ Curtir (<span class="like-count">0</span>)
-        </button>
-    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
 
-    <!-- Modal oculto inicialmente.
-         O ID "modal" permitirá que o JavaScript encontre e controle a janela.
-         A classe "modal" poderá ser usada para estilização.
-         A classe "hidden" poderá ser usada futuramente para ocultar ou exibir o modal. -->
-    <div id="modal" class="modal hidden">
+        <div class="modal-conteudo">
 
-        <!-- A classe "modal-content" identifica a área interna da janela flutuante. -->
-        <div class="modal-content">
+            <!-- Botão fechar -->
+            <span id="fecharModal" class="fechar">&times;</span>
 
-            <!-- A classe "close-btn" será usada futuramente pelo JavaScript
-                 para fechar o modal quando o usuário clicar no "X". -->
-            <span class="close-btn">&times;</span>
+            <h2 id="tituloModal"></h2>
 
-            <!-- O ID "modal-title" permitirá que o JavaScript altere
-                 dinamicamente o título do modal. -->
-            <h3 id="modal-title"></h3>
-
-            <!-- O ID "modal-text" permitirá que o JavaScript altere
-                 dinamicamente o texto detalhado do modal. -->
-            <p id="modal-text"></p>
+            <p id="textoModal"></p>
 
         </div>
+
     </div>
+
+    <!-- Ligação com JavaScript -->
+    <script src="modal.js"></script>
+
 </body>
+</html>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     
+</body>
 </html>

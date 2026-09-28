@@ -1,508 +1,93 @@
-
-/************************************************
-ESTILIZAÇÃO GERAL DA PÁGINA
-************************************************/
-
-/* O body representa toda a página visível pelo usuário. */
+/* Configurações gerais */
 body {
-    font-family: "Monotype Corsiva", cursive;
-    /* Define a fonte principal utilizada em todo o site. */
-
-    background-color: #E6D5F7;
-    /* Define a cor lilás como fundo principal da página. */
-
-    color: black;
-    /* Define a cor padrão dos textos. */
-
     margin: 0;
-    /* Remove a margem externa padrão aplicada pelo navegador. */
-
-    padding: 20px;
-    /* Cria espaço interno entre as bordas da tela e o conteúdo. */
-
-    line-height: 1.6;
-    /* Aumenta o espaçamento entre linhas para melhorar a leitura. */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
 }
 
-
-/************************************************
-TÍTULO PRINCIPAL
-************************************************/
-
-/* Estiliza o título principal do site. */
-h1 {
-    color: black;
-    /* Utiliza a cor principal escolhida para os títulos. */
-
-    text-align: center;
-    /* Centraliza o texto horizontalmente. */
-
-    margin-bottom: 15px;
-    /* Cria espaço externo abaixo do título. */
-
-    font-size: 3rem;
-    /* Aumenta o tamanho da fonte para destacar o título. */
-}
-
-
-/************************************************
-PARÁGRAFOS
-************************************************/
-
-/* Estiliza os parágrafos do site. */
-p {
-    margin-bottom: 15px;
-    /* Cria espaço externo abaixo dos parágrafos. */
-
-    font-size: 1.2rem;
-    /* Aumenta levemente o tamanho do texto. */
-}
-
-
-/************************************************
-CARTÕES DE CONTEÚDO
-************************************************/
-
-/* Cada .card representa um cartão de conteúdo.
-   Aqui aplicamos os conceitos do Box Model. */
-.card {
-    background-color: #FFFFFF;
-    /* Define o fundo branco/bege claro para os cartões. */
-
-    margin: 20px auto;
-    /* Margin cria espaço EXTERNO ao redor do cartão.
-       O valor auto ajuda a centralizar o elemento. */
-
-    padding: 20px;
-    /* Padding cria espaço INTERNO entre a borda e o conteúdo. */
-
-    border: 2px solid black;
-    /* Border cria uma borda visível ao redor do cartão. */
-
-    border-radius: 15px;
-    /* Arredonda os cantos do cartão. */
-
-    max-width: 800px;
-    /* Limita a largura máxima do cartão. */
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Adiciona uma sombra suave para destacar o cartão. */
-}
-
-
-/* Estiliza os subtítulos dos cartões. */
-.card h2 {
-    color: black;
-    /* Utiliza a cor principal para os subtítulos. */
-
-    margin-bottom: 10px;
-    /* Cria espaço abaixo do subtítulo. */
-}
-
-
-/************************************************
-IMAGENS DOS CARTÕES
-************************************************/
-
-/* Configura as imagens dos cartões. */
-.card img {
-    width: 100%;
-    /* Faz a imagem ocupar toda a largura disponível. */
-
-    height: auto;
-    /* Mantém a proporção original da imagem. */
-
-    border-radius: 10px;
-    /* Arredonda os cantos da imagem. */
-
-    margin-top: 10px;
-    /* Adiciona espaço acima da imagem. */
-
-    margin-bottom: 15px;
-    /* Adiciona espaço abaixo da imagem. */
-
-    border: 2px solid black;
-    /* Adiciona uma borda ao redor da imagem. */
-}
-
-
-/************************************************
-BOTÕES
-************************************************/
-
-/* Estilo comum para os botões do site. */
-.btn-modal,
-.btn-like {
-    background-color: purple;
-    /* Define a cor secundária utilizada nos botões. */
-
+/* Cabeçalho */
+header {
+    background-color: #5a189a;
     color: white;
-    /* Define a cor do texto para melhor contraste. */
-
-    margin: 5px;
-    /* Margin cria espaço EXTERNO ao redor dos botões. */
-
-    padding: 10px 15px;
-    /* Padding cria espaço INTERNO aumentando a área clicável. */
-
-    border: 2px solid black;
-    /* Border adiciona uma borda visível ao botão. */
-
-    border-radius: 10px;
-    /* Arredonda os cantos dos botões. */
-
-    cursor: pointer;
-    /* Mostra o cursor de mão indicando que o botão é clicável. */
-
-    font-family: "Monotype Corsiva", cursive;
-    /* Mantém a mesma fonte escolhida para o projeto. */
-
-    font-size: 1rem;
-    /* Define um tamanho confortável para o texto do botão. */
-
-    transition: 0.3s;
-    /* Cria uma animação suave quando houver interação. */
-}
-
-
-/* Efeito visual quando o mouse passa sobre o botão. */
-.btn-modal:hover,
-.btn-like:hover {
-    background-color: #5e2b97;
-    /* Escurece o roxo para indicar interação. */
-
-    transform: scale(1.05);
-    /* Aumenta levemente o tamanho do botão durante o hover. */
-}
-
-
-/************************************************
-TEXTO DESTACADO
-************************************************/
-
-/* Estiliza textos marcados com a tag mark. */
-mark {
-    background-color: purple;
-    /* Define fundo roxo para destacar o texto. */
-
-    color: white;
-    /* Define texto branco para melhorar o contraste. */
-
-    padding: 2px 5px;
-    /* Adiciona um pequeno espaço interno ao redor do texto. */
-
-    border-radius: 5px;
-    /* Arredonda levemente os cantos do destaque. */
-}
-
-
-/************************************************
-MODAL (JANELA FLUTUANTE)
-************************************************/
-
-/* O modal ocupa toda a tela quando for exibido. */
-.modal {
-    position: fixed;
-    /* Fixed mantém o modal fixo na tela mesmo ao rolar a página. */
-
-    top: 0;
-    /* Posiciona o modal no topo da tela. */
-
-    left: 0;
-    /* Posiciona o modal no canto esquerdo da tela. */
-
-    width: 100%;
-    /* Faz o modal ocupar toda a largura da tela. */
-
-    height: 100%;
-    /* Faz o modal ocupar toda a altura da tela. */
-
-    background-color: rgba(0, 0, 0, 0.6);
-    /* Cria um fundo escuro com transparência usando rgba. */
-
-    display: flex;
-    /* Utiliza Flexbox para alinhamento interno. */
-
-    justify-content: center;
-    /* Centraliza o modal horizontalmente. */
-
-    align-items: center;
-    /* Centraliza o modal verticalmente. */
-}
-
-
-/************************************************
-CLASSE PARA OCULTAR O MODAL
-************************************************/
-
-/* Mantém o modal escondido até ser ativado pelo JavaScript. */
-.hidden {
-    display: none;
-    /* Remove completamente o elemento da visualização. */
-}
-
-
-/************************************************
-CONTEÚDO INTERNO DO MODAL
-************************************************/
-
-/* Caixa central onde será exibido o conteúdo do modal. */
-.modal-content {
-    background-color: white;
-    /* Define fundo branco para destacar as informações. */
-
-    padding: 30px;
-    /* Cria espaço interno entre a borda e o conteúdo. */
-
-    width: 80%;
-    /* Faz a caixa ocupar 80% da largura disponível. */
-
-    max-width: 600px;
-    /* Limita a largura máxima da caixa. */
-
-    border-radius: 15px;
-    /* Arredonda os cantos da janela modal. */
-
     text-align: center;
-    /* Centraliza os textos internos. */
-
-    position: relative;
-    /* Permite posicionar elementos filhos tomando esta caixa como referência. */
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    /* Adiciona uma sombra para destacar o modal da página. */
+    padding: 20px;
 }
 
-
-/************************************************
-BOTÃO FECHAR MODAL
-************************************************/
-
-/* Representa o botão X de fechamento do modal. */
-.close-btn {
-    position: absolute;
-    /* Posiciona o elemento em relação ao .modal-content. */
-
-    top: 10px;
-    /* Distância em relação ao topo da caixa modal. */
-
-    right: 15px;
-    /* Distância em relação à borda direita da caixa modal. */
-
-    font-size: 30px;
-    /* Aumenta o tamanho do símbolo X. */
-
-    color: purple;
-    /* Utiliza a cor secundária definida para o projeto. */
-
-    cursor: pointer;
-    /* Indica que o elemento pode ser clicado. */
-}
-
-
-/* Efeito visual quando o mouse passa sobre o X. */
-.close-btn:hover {
-    color: black;
-    /* Troca a cor para indicar interação do usuário. */
-}
-/* Container que organiza os cartões */
-.cards-container {
-    display: grid;
-    /* Grid permite criar colunas e linhas automaticamente */
-
-    grid-template-columns: 1fr 1fr;
-    /* Cria duas colunas de tamanhos iguais */
-
-    gap: 20px;
-    /* Adiciona espaço entre os cartões */
-
-    max-width: 1200px;
-    /* Limita a largura total da área dos cartões */
-
-    margin: 0 auto;
-    /* Centraliza o conjunto de cartões na página */
-}
-
-/* Faz os cartões ocuparem toda a coluna disponível */
-.card {
-    width: 100%;
-}
-
-/* Responsividade para celular */
-@media (max-width: 768px) {
-    .cards-container {
-        grid-template-columns: 1fr;
-        /* Em telas pequenas exibe apenas uma coluna */
-    }
-}
-/* Container que organiza os cartões */
-.cards-container {
-    display: grid;
-    /* Grid permite criar colunas e linhas automaticamente */
-
-    grid-template-columns: 1fr 1fr;
-    /* Cria duas colunas de tamanhos iguais */
-
-    gap: 20px;
-    /* Adiciona espaço entre os cartões */
-
-    max-width: 1200px;
-    /* Limita a largura total da área dos cartões */
-
-    margin: 0 auto;
-    /* Centraliza o conjunto de cartões na página */
-}
-
-/* Faz os cartões ocuparem toda a coluna disponível */
-.card {
-    width: 100%;
-}
-
-/* Responsividade para celular */
-@media (max-width: 768px) {
-    .cards-container {
-        grid-template-columns: 1fr;
-        /* Em telas pequenas exibe apenas uma coluna */
-    }
-}
-/* Container que organiza os cartões em duas colunas */
-.cards-container {
-    display: grid;
-    /* Grid permite criar layouts em linhas e colunas */
-
-    grid-template-columns: 1fr 1fr;
-    /* Cria duas colunas com larguras iguais */
-
-    gap: 20px;
-    /* Espaço entre os cartões */
-
-    max-width: 1200px;
-    /* Limita a largura total do conjunto */
-
-    margin: 20px auto;
-    /* Centraliza o container na página */
-}
-
-/* Faz cada cartão ocupar toda a coluna disponível */
-.card {
-    width: 100%;
-}
-.card img {
-    width: 80%;
-    /* Faz a imagem ocupar apenas 80% da largura do cartão */
-
-    height: auto;
-    /* Mantém a proporção original da imagem */
-
-    display: block;
-    /* Permite centralizar a imagem */
-
-    margin: 10px auto;
-    /* Centraliza a imagem horizontalmente */
-
-    border-radius: 10px;
-    /* Arredonda os cantos da imagem */
-}
-.card img {
-    width: 150px;
-    /* Define uma largura menor para a imagem */
-
-    height: auto;
-    /* Mantém a proporção original */
-
-    display: block;
-    /* Permite centralizar a imagem */
-
-    margin: 10px auto;
-    /* Centraliza a imagem dentro do cartão */
-
-    border-radius: 10px;
-    /* Arredonda os cantos da imagem */
-}
-.card {
-    background-color: #FFFFFF;
-
-    width: 350px;
-    /* Define uma largura menor para o cartão */
-
-    padding: 15px;
-    /* Reduz o espaço interno */
-
-    margin: 10px auto;
-    /* Adiciona um pequeno espaço externo */
-
-    border: 2px solid black;
-    /* Cria uma borda ao redor do cartão */
-
-    border-radius: 15px;
-    /* Arredonda os cantos */
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Adiciona uma sombra suave */
-}
-/* Container dos cartões */
-.cards-container {
+/* Área principal */
+.container {
     display: flex;
-    /* Coloca os elementos lado a lado */
-
     justify-content: center;
-    /* Centraliza os cartões na página */
-
-    gap: 20px;
-    /* Cria espaço entre os cartões */
-
+    gap: 30px;
     flex-wrap: wrap;
-    /* Permite quebrar linha em telas pequenas */
+    padding: 30px;
 }
+
+/* Cards */
+.card {
+    width: 320px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
 .card h2 {
-    margin-top: 0;
-    /* Remove o espaço acima do título */
-
-    margin-bottom: 5px;
-    /* Diminui o espaço abaixo do título */
-
-    font-size: 22px;
-    /* Define um tamanho confortável para leitura */
-
-    text-align: center;
-    /* Centraliza o título */
-}
-h1 {
-    text-align: center;
-    /* Centraliza o título horizontalmente */
-
-    margin-bottom: 10px;
-    /* Aproxima o texto do título */
+    font-size: 20px;
+    padding: 10px;
 }
 
-body > p {
-    text-align: center;
-    /* Centraliza o parágrafo */
-
-    max-width: 800px;
-    /* Limita a largura para facilitar a leitura */
-
-    margin: 0 auto 20px auto;
-    /* Centraliza o bloco de texto na página */
-}
-h1 {
-    text-align: center;
-    /* Centraliza o título */
-
-    margin-bottom: 5px;
-    /* Diminui o espaço abaixo do título */
+.card p {
+    padding: 0 15px;
 }
 
-body > p {
-    text-align: center;
-    /* Centraliza o texto */
+.card button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #5a189a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    max-width: 900px;
-    /* Limita a largura para facilitar a leitura */
+.card button:hover {
+    background-color: #7b2cbf;
+}
 
-    margin: 0 auto 20px auto;
-    /* Centraliza o bloco e deixa pouco espaço acima */
+/* Modal */
+.modal {
+    display: none; /* começa escondido */
+    position: fixed;
+    left: 0;
+    top: 0;
 
-    line-height: 1.5;
-    /* Melhora a leitura do texto */
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Conteúdo do modal */
+.modal-conteudo {
+    background-color: white;
+    width: 60%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Botão fechar */
+.fechar {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
 }
